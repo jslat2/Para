@@ -1,6 +1,7 @@
 package quantum.para;
 
 import android.app.Dialog;
+import android.os.Environment;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v7.app.AppCompatActivity;
@@ -22,7 +23,13 @@ public class MainActivity extends AppCompatActivity {
     public static int currentUser = -1;
     public static int currentClientPosition = -1;
     public static int currentBillPosition = -1;
-    public static boolean editingBill = false;
+    public static String currentDirectory = Environment.getExternalStorageDirectory().toString();
+    public static String[] currentDirectoryList;
+
+    //variable representing whether currently navigating to client directory
+    //for use in navigating out of files_nav fragment
+    public static boolean filesActive = false;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -53,6 +60,35 @@ public class MainActivity extends AppCompatActivity {
         Home h = new Home();
         switchFrag(h);
     }
+
+    public void openFileNav(View v){
+        FileNav f = new FileNav();
+        switchFrag(f);
+    }
+
+    public void fileNavUpLevel(View v){
+
+        for(int i = currentDirectory.length()-1; i >= 0; i--){
+            if(currentDirectory.equals(Environment.getExternalStorageDirectory().toString())){
+                Toast.makeText(this, "Cannot move up a level", Toast.LENGTH_LONG).show();
+                break;
+            }
+
+            currentDirectory = currentDirectory.substring(0, i);
+            if(currentDirectory.charAt(i-1) == '/'){
+                currentDirectory = currentDirectory.substring(0, i-1);
+                break;
+            }
+        }
+
+        FileNav n = new FileNav();
+        FragmentManager fragmentManager = getSupportFragmentManager();
+        fragmentManager.beginTransaction()
+                .replace(R.id.container, n).addToBackStack(null)
+                .commit();
+    }
+
+
 
     public void saveBill(View v){
         String service = ((EditText)findViewById(R.id.serviceRendered)).getText().toString();
@@ -105,6 +141,16 @@ public class MainActivity extends AppCompatActivity {
         switchFrag(b);
     }
 
+    public void openToDo(View v){
+        ToDo t = new ToDo();
+        switchFrag(t);
+    }
+
+    public void openTodoEditor(View v){
+        ToDoEditor t = new ToDoEditor();
+        switchFrag(t);
+    }
+
     public void login(View v){
         String user = ((EditText) findViewById(R.id.username)).getText().toString();
         String pass = ((EditText) findViewById(R.id.password)).getText().toString();
@@ -116,6 +162,15 @@ public class MainActivity extends AppCompatActivity {
         } else{
             Toast.makeText(this, "Invalid Login", Toast.LENGTH_LONG).show();
         }
+    }
+
+    public void logout(View v){
+        currentUser = -1;
+        currentClientPosition = -1;
+        currentBillPosition = -1;
+
+        Login l = new Login();
+        switchFragNoBackStack(l);
     }
 
     public void openPaymentLog(View v){

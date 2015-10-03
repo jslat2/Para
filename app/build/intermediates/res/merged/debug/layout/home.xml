@@ -24,4 +24,4 @@
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
         android:layout_above="@+id/createClient" />
-</RelativeLayout><!-- From: file:/home/rockit/Desktop/projects/Para/app/src/main/res/layout/home.xml -->
+</RelativeLayout><!-- From: file:/C:/Users/Gaming/Desktop/Para/app/src/main/res/layout/home.xml -->

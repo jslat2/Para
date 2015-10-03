@@ -20,6 +20,7 @@ public class Database extends SQLiteOpenHelper {
         db.execSQL("CREATE TABLE client(ID INTEGER, userNum TEXT, firstName TEXT, lastName TEXT, email TEXT, phone TEXT, address TEXT, city TEXT, state TEXT, zip TEXT);");
         db.execSQL("CREATE TABLE bill(ID INTEGER, userNum TEXT, clientNum INTEGER, yearOpened INTEGER, monthOpened INTEGER, dayOpened INTEGER, originalAmountDue REAL, serviceRendered TEXT);");
         db.execSQL("CREATE TABLE payment(ID INTEGER, userNum TEXT, clientNum INTEGER, billNum Integer, yearPaid INTEGER, monthPaid INTEGER, dayPaid INTEGER, amountPaid REAL);");
+        db.execSQL("CREATE TABLE todo(ID INTEGER, userNum TEXT, clientNum INTEGER, todoNum Integer, task TEXT, done BOOLEAN, yearDue INTEGER, monthDue INTEGER, dayDue INTEGER);");
     }
 
     @Override
@@ -56,6 +57,12 @@ public class Database extends SQLiteOpenHelper {
         return sq.query("bill WHERE userNum = " + userNum + " AND clientNum = " + getClientID(db, userNum, listPosition), col, null, null, null, null, "yearOpened asc, monthOpened asc, dayOpened asc");
     }
 
+    public Cursor getClientTodos(Database db, int userNum, int listPosition){
+        String[] col = {"rowid _id", "ID", "userNum", "clientNum", "todoNum", "task", "done", "yearDue", "monthDue", "dayDue"};
+        SQLiteDatabase sq = db.getReadableDatabase();
+        return sq.query("todo WHERE userNum = " + userNum + " AND clientNum = " + getClientID(db, userNum, listPosition), col, null, null, null, null, "yearDue asc, monthDue asc, dayDue asc");
+    }
+
     public Cursor getPayments(Database db, int userNum, int currentClientPosition, int currentBillPosition){
         String[] col = {"rowid _id", "ID", "userNum", "clientNum", "billNum", "yearPaid", "monthPaid", "dayPaid", "amountPaid"};
         SQLiteDatabase sq = db.getReadableDatabase();
@@ -72,6 +79,15 @@ public class Database extends SQLiteOpenHelper {
             total += cr.getFloat(0);
             cr.moveToNext();
         }
+
+        col[0] = "amountPaid";
+        cr = sq.query("payment WHERE userNum = " + currentUserID + " AND clientNum = " + getClientID(db, currentUserID, clientListPosition), col, null, null, null, null, null);
+        cr.moveToFirst();
+        while(!cr.isAfterLast()){
+            total -= cr.getFloat(0);
+            cr.moveToNext();
+        }
+
         return total;
     }
 

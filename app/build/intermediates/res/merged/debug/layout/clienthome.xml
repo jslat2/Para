@@ -27,4 +27,28 @@
         android:layout_gravity="center_horizontal"
         android:onClick="openBilling" />
 
-</LinearLayout><!-- From: file:/home/rockit/Desktop/projects/Para/app/src/main/res/layout/clienthome.xml -->
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Files"
+        android:id="@+id/button5"
+        android:layout_gravity="center_horizontal"
+        android:onClick="openFileNav" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Logout"
+        android:id="@+id/button6"
+        android:layout_gravity="center_horizontal"
+        android:onClick="logout" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="To Do"
+        android:id="@+id/button7"
+        android:layout_gravity="center_horizontal"
+        android:onClick="openToDo" />
+
+</LinearLayout><!-- From: file:/C:/Users/Gaming/Desktop/Para/app/src/main/res/layout/clienthome.xml -->

@@ -33,7 +33,6 @@ public class Home extends Fragment {
         list.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             public void onItemClick(AdapterView<?> av, View view, int i, long l) {
                 MainActivity.currentClientPosition = i;
-                Toast.makeText(getActivity(), Integer.toString(i), Toast.LENGTH_SHORT).show();
                 ClientHome c = new ClientHome();
                 FragmentManager fragmentManager = getActivity().getSupportFragmentManager();
                 fragmentManager.beginTransaction().replace(R.id.container, c).addToBackStack(null)

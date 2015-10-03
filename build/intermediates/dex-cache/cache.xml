@@ -2,32 +2,32 @@
 <items version="2" >
 
     <item
-        jar="/home/rockit/Desktop/projects/Para/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.0.0/jars/libs/internal_impl-23.0.0.jar"
-        jumboMode="false"
-        revision="23.0.0"
-        sha1="8bd336eeae661e8311330284897ee07f8ebaa297">
-        <dex dex="/home/rockit/Desktop/projects/Para/app/build/intermediates/pre-dexed/debug/internal_impl-23.0.0-8e14d47db0c523f279ccfce5b2af165d99ccfd38.jar" />
-    </item>
-    <item
-        jar="/home/rockit/Android/Sdk/extras/android/m2repository/com/android/support/support-annotations/23.0.0/support-annotations-23.0.0.jar"
+        jar="C:\Users\Gaming\AppData\Local\Android\sdk1\extras\android\m2repository\com\android\support\support-annotations\23.0.0\support-annotations-23.0.0.jar"
         jumboMode="false"
         revision="23.0.0"
         sha1="990e7f98a7bad86a40b1f0bcfeb039023afd0839">
-        <dex dex="/home/rockit/Desktop/projects/Para/app/build/intermediates/pre-dexed/debug/support-annotations-23.0.0-f643241f33c5795550392cdb1f7a76ed26256198.jar" />
+        <dex dex="C:\Users\Gaming\Desktop\Para\app\build\intermediates\pre-dexed\debug\support-annotations-23.0.0-aafc5dc5bffbc21fbddc6a57e61a70ffda1e00e2.jar" />
     </item>
     <item
-        jar="/home/rockit/Desktop/projects/Para/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.0.0/jars/classes.jar"
-        jumboMode="false"
-        revision="23.0.0"
-        sha1="8413c27b45b7fe61dca4a98159f65e2cee215f5a">
-        <dex dex="/home/rockit/Desktop/projects/Para/app/build/intermediates/pre-dexed/debug/classes-dadcd7f1a03719c74b187fb50c4d148ef506a5ef.jar" />
-    </item>
-    <item
-        jar="/home/rockit/Desktop/projects/Para/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.0/jars/classes.jar"
+        jar="C:\Users\Gaming\Desktop\Para\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\23.0.0\jars\classes.jar"
         jumboMode="false"
         revision="23.0.0"
         sha1="4fcf0b1879f8caf497c073e1432d398e9e2988c1">
-        <dex dex="/home/rockit/Desktop/projects/Para/app/build/intermediates/pre-dexed/debug/classes-69fc63012192c4f2df63e46ee0cc860a070fd864.jar" />
+        <dex dex="C:\Users\Gaming\Desktop\Para\app\build\intermediates\pre-dexed\debug\classes-19c52c453e93ffc76b40f919ed4dc597ca08bbad.jar" />
+    </item>
+    <item
+        jar="C:\Users\Gaming\Desktop\Para\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.0.0\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.0"
+        sha1="8413c27b45b7fe61dca4a98159f65e2cee215f5a">
+        <dex dex="C:\Users\Gaming\Desktop\Para\app\build\intermediates\pre-dexed\debug\classes-e1f4259b0270ce3e0a9d29b8fa3a660541acada6.jar" />
+    </item>
+    <item
+        jar="C:\Users\Gaming\Desktop\Para\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.0.0\jars\libs\internal_impl-23.0.0.jar"
+        jumboMode="false"
+        revision="23.0.0"
+        sha1="8bd336eeae661e8311330284897ee07f8ebaa297">
+        <dex dex="C:\Users\Gaming\Desktop\Para\app\build\intermediates\pre-dexed\debug\internal_impl-23.0.0-c3d1674a13029e59817bcfb4a2a2e8f519b030d7.jar" />
     </item>
 
 </items>

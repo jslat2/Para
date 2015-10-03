@@ -28,7 +28,7 @@
     <Button
         android:layout_width="80dp"
         android:layout_height="wrap_content"
-        android:text="Exit"
+        android:text="Cancel"
         android:id="@+id/exitPayment"
         android:layout_below="@+id/datePaid"
         android:layout_alignRight="@+id/paymentAmount"
@@ -63,4 +63,4 @@
         android:layout_below="@+id/date"
         android:layout_centerHorizontal="true" />
 
-</RelativeLayout><!-- From: file:/home/rockit/Desktop/projects/Para/app/src/main/res/layout/paymentdialog.xml -->
+</RelativeLayout><!-- From: file:/C:/Users/Gaming/Desktop/Para/app/src/main/res/layout/paymentdialog.xml -->

@@ -62,4 +62,4 @@
         android:layout_below="@+id/bills"
         android:layout_marginTop="-30dp"
         android:textAlignment="center" />
-</RelativeLayout><!-- From: file:/home/rockit/Desktop/projects/Para/app/src/main/res/layout/billing.xml -->
+</RelativeLayout><!-- From: file:/C:/Users/Gaming/Desktop/Para/app/src/main/res/layout/billing.xml -->
