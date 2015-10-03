@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp">
+
+    <EditText
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:ems="10"
+        android:id="@+id/paymentAmount"
+        android:hint="Amount"
+        android:layout_below="@+id/textView6"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="20dp" />
+
+    <Button
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:text="Save"
+        android:id="@+id/saveButton"
+        android:singleLine="false"
+        android:layout_alignTop="@+id/exitPayment"
+        android:layout_alignLeft="@+id/textView6"
+        android:layout_alignStart="@+id/textView6" />
+
+    <Button
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:text="Cancel"
+        android:id="@+id/exitPayment"
+        android:layout_below="@+id/datePaid"
+        android:layout_alignRight="@+id/paymentAmount"
+        android:layout_alignEnd="@+id/paymentAmount" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Please Enter Amount"
+        android:id="@+id/textView6"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Date"
+        android:id="@+id/date"
+        android:layout_below="@+id/paymentAmount"
+        android:layout_alignLeft="@+id/paymentAmount"
+        android:layout_alignStart="@+id/paymentAmount" />
+
+    <DatePicker
+        android:layout_width="wrap_content"
+        android:id="@+id/datePaid"
+        android:datePickerMode="spinner"
+        android:layout_height= "200px"
+        android:padding = "0px"
+        android:calendarViewShown="false"
+        android:layout_below="@+id/date"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>
