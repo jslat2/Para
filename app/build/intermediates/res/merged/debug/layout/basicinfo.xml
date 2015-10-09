@@ -6,38 +6,40 @@
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Save"
-        android:id="@+id/save"
-        android:layout_gravity="center_horizontal"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true"
+        android:text="Exit"
+        android:id="@+id/exit"
+        android:onClick="openHome"
         android:layout_alignParentBottom="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        android:onClick="saveBasicInfo" />
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:background="@drawable/button" />
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Exit"
-        android:id="@+id/exit"
-        android:layout_above="@+id/save"
+        android:text="Save"
+        android:id="@+id/save"
+        android:layout_gravity="center_horizontal"
+        android:onClick="saveBasicInfo"
+        android:layout_above="@+id/exit"
         android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        android:onClick="openHome" />
+        android:background="@drawable/button"
+        android:layout_marginBottom="10px" />
 
     <ScrollView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/scrollView"
+        android:fillViewport="false"
         android:layout_alignParentTop="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true"
-        android:layout_above="@+id/exit">
+        android:layout_above="@+id/save">
 
         <LinearLayout
             android:orientation="vertical"
@@ -111,4 +113,4 @@
         </LinearLayout>
     </ScrollView>
 
-</RelativeLayout><!-- From: file:/C:/Users/Gaming/Desktop/Para/app/src/main/res/layout/basicinfo.xml -->
+</RelativeLayout><!-- From: file:/home/rockit/Desktop/Projects/para/app/src/main/res/layout/basicinfo.xml -->

@@ -15,7 +15,8 @@
         android:layout_alignParentBottom="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        android:onClick="openClientHome" />
+        android:onClick="openClientHome"
+        android:background="@drawable/button" />
 
     <ListView
         android:layout_width="wrap_content"
@@ -37,7 +38,9 @@
         android:layout_alignParentEnd="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        android:onClick="openBill" />
+        android:onClick="openBill"
+        android:layout_marginBottom="10px"
+        android:background="@drawable/button" />
 
     <TextView
         android:layout_width="wrap_content"

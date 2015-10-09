@@ -28,6 +28,10 @@
         android:text="Create"
         android:id="@+id/createAccountButton"
         android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        android:onClick="createAccount" />
+        android:onClick="createAccount"
+        android:background="@drawable/button"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
 </RelativeLayout>

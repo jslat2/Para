@@ -1,7 +1,33 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical" android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:weightSum="1">
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Home"
+        android:id="@+id/home"
+        android:onClick="openHome"
+        android:height="150px"
+        android:layout_marginTop="50px"
+        android:layout_marginLeft="10px"
+        android:layout_marginRight="10px"
+        android:background="#ff5722"
+        android:layout_marginBottom="10px" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="To Do"
+        android:id="@+id/button7"
+        android:onClick="openToDos"
+        android:height="150px"
+        android:layout_marginRight="10px"
+        android:layout_marginLeft="10px"
+        android:background="#ff7043"
+        android:layout_marginBottom="10px" />
 
     <Button
         android:layout_width="match_parent"
@@ -9,15 +35,12 @@
         android:text="Basic Info"
         android:id="@+id/basicInfo"
         android:layout_gravity="center_horizontal"
-        android:onClick="openBasicInfoEditor" />
-
-    <Button
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Home"
-        android:id="@+id/home"
-        android:layout_gravity="center_horizontal"
-        android:onClick="openHome" />
+        android:onClick="openBasicInfoEditor"
+        android:height="150px"
+        android:layout_marginLeft="10px"
+        android:layout_marginRight="10px"
+        android:background="#ff8a65"
+        android:layout_marginBottom="10px" />
 
     <Button
         android:layout_width="match_parent"
@@ -25,7 +48,12 @@
         android:text="Billing"
         android:id="@+id/billing"
         android:layout_gravity="center_horizontal"
-        android:onClick="openBilling" />
+        android:onClick="openBilling"
+        android:height="150px"
+        android:layout_marginLeft="10px"
+        android:layout_marginRight="10px"
+        android:background="#ffab91"
+        android:layout_marginBottom="10px" />
 
     <Button
         android:layout_width="match_parent"
@@ -33,22 +61,22 @@
         android:text="Files"
         android:id="@+id/button5"
         android:layout_gravity="center_horizontal"
-        android:onClick="openFileNav" />
+        android:onClick="openFileNav"
+        android:height="150px"
+        android:layout_marginLeft="10px"
+        android:layout_marginRight="10px"
+        android:background="#ffccbc"
+        android:layout_marginBottom="10px" />
 
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Logout"
         android:id="@+id/button6"
-        android:layout_gravity="center_horizontal"
-        android:onClick="logout" />
+        android:onClick="logout"
+        android:height="150px"
+        android:layout_marginLeft="10px"
+        android:layout_marginRight="10px"
+        android:background="#fbe9e7" />
 
-    <Button
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="To Do"
-        android:id="@+id/button7"
-        android:layout_gravity="center_horizontal"
-        android:onClick="openToDo" />
-
-</LinearLayout><!-- From: file:/C:/Users/Gaming/Desktop/Para/app/src/main/res/layout/clienthome.xml -->
+</LinearLayout><!-- From: file:/home/rockit/Desktop/Projects/para/app/src/main/res/layout/clienthome.xml -->

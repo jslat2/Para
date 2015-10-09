@@ -50,7 +50,8 @@
         android:layout_alignParentStart="true"
         android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true"
-        android:onClick="openBilling" />
+        android:onClick="openBilling"
+        android:background="@drawable/button" />
 
     <Button
         android:layout_width="wrap_content"
@@ -62,7 +63,9 @@
         android:layout_alignParentEnd="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        android:onClick="saveBill" />
+        android:onClick="saveBill"
+        android:background="@drawable/button"
+        android:layout_marginBottom="10px" />
 
     <TextView
         android:layout_width="wrap_content"

@@ -6,7 +6,16 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/yearDue"
+        android:id="@+id/done"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:id="@+id/monthDue"
         android:layout_alignParentTop="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true" />
@@ -14,14 +23,9 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/monthDue"
-        android:layout_alignParentTop="true"
-        android:layout_toRightOf="@+id/yearDue"
-        android:layout_toEndOf="@+id/yearDue" />
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/dayDue"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="/"
+        android:id="@+id/textView9"
         android:layout_alignParentTop="true"
         android:layout_toRightOf="@+id/monthDue"
         android:layout_toEndOf="@+id/monthDue" />
@@ -29,9 +33,29 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/done"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:id="@+id/dayDue"
         android:layout_alignParentTop="true"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true" />
+        android:layout_toRightOf="@+id/textView9"
+        android:layout_toEndOf="@+id/textView9" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="/"
+        android:id="@+id/textView10"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/dayDue"
+        android:layout_toEndOf="@+id/dayDue" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:id="@+id/yearDue"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/textView10"
+        android:layout_toEndOf="@+id/textView10" />
 
 </RelativeLayout>

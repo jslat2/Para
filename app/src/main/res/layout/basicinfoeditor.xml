@@ -9,24 +9,27 @@
         android:text="Save"
         android:id="@+id/save"
         android:layout_gravity="center_horizontal"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentBottom="true"
+        android:onClick="editBasicInfo"
+        android:layout_above="@+id/exit"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        android:onClick="editBasicInfo" />
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:background="@drawable/button"
+        android:layout_marginBottom="10px" />
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Exit"
         android:id="@+id/exit"
-        android:layout_above="@+id/save"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true"
+        android:onClick="openClientHome"
+        android:layout_alignParentBottom="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        android:onClick="openClientHome" />
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:background="@drawable/button" />
 
     <ScrollView
         android:layout_width="wrap_content"
@@ -35,9 +38,7 @@
         android:layout_alignParentTop="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true"
-        android:layout_above="@+id/exit">
+        android:layout_above="@+id/save">
 
         <LinearLayout
             android:orientation="vertical"
